@@ -13,7 +13,6 @@ class Comment extends Model
     //ESTO NO SE HACE EN PRODUCCION SOLO PARA PRUEBAS.
     protected $guarded = ['*'];
 
-
     /**
      * The attributes that are mass assignable.
      *
@@ -24,4 +23,5 @@ class Comment extends Model
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
     
+
 }
